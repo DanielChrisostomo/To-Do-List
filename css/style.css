@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  color: #333;
+  color: #fdfdfd;
 }
 
 img {
@@ -20,8 +20,8 @@ body {
 
 button {
   background-color: #fdfdfd;
-  color: #102f5e;
-  border: 2px solid #102f5e;
+  color: #95704f;
+  border: 2px solid #95704f;
   padding: 0.3rem 0.6rem;
   font-size: 1rem;
   cursor: pointer;
@@ -32,7 +32,7 @@ button {
 }
 
 button:hover {
-  background-color: #102f5e;
+  background-color: #95704f;
 }
 
 button:hover > i {
@@ -41,13 +41,22 @@ button:hover > i {
 
 button i {
   pointer-events: none;
-  color: #102f5e;
+  color: #95704f;
   font-weight: bold;
 }
 
 input,
 select {
   padding: 0.25rem 0.5rem;
+  color: #000;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+select option {
+  color: #000;
 }
 
 .hide {
@@ -57,7 +66,7 @@ select {
 .todo-container {
   max-width: 500px;
   margin: 4rem auto;
-  background-color: #fdfdfd;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;
   border-radius: 15px;
 }
@@ -78,10 +87,12 @@ select {
 #edit-form p {
   margin-bottom: 0.5rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .form-control {
   display: flex;
+  justify-content: center;
 }
 
 .form-control input {
@@ -90,7 +101,8 @@ select {
 
 #cancel-edit-btn {
   margin-top: 1rem;
-  color: #444;
+  color: #111;
+  margin: 1rem auto;
 }
 
 #toolbar {
@@ -150,11 +162,11 @@ select {
 }
 
 .done {
-  background: #395169;
+  background: #826245;
 }
 
 .done h3 {
-  color: #fff;
   text-decoration: line-through;
+  color: #fff;
   font-style: italic;
 }
