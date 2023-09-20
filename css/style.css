@@ -16,6 +16,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 button {
@@ -65,7 +66,7 @@ select option {
 
 .todo-container {
   max-width: 500px;
-  margin: 4rem auto;
+  margin: 4rem auto 0;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 1.5rem;
   border-radius: 15px;
